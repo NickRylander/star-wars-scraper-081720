@@ -1,3 +1,3 @@
-# Star Wars API Code
+# Star Wars Scraper Code
 
-- Intro to API build, refactored in simple API project
+- Intro to Scraper build, refactored into simple Scraper project
