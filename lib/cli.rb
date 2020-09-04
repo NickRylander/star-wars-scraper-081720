@@ -2,7 +2,7 @@ class CLI
     def run
         puts "Welcome to the Star Wars Character Database!"
         puts "Please choose a character to see more information:"
-        API.scrape_characters
+        Scraper.scrape_characters
         list_characters
         menu
     end
@@ -38,18 +38,18 @@ class CLI
             list_characters
             menu
         end
-
-
-
     end
 
     def display_character_details(character)
-        API.scrape_character_details(character)
+        Scraper.scrape_character_details(character)
         puts "Here are the details for #{character.name}:"
-        puts "Height: #{character.height}"
-        puts "Mass: #{character.mass}"
-        puts "Hair Color: #{character.hair_color}"
-        puts "Skin Color: #{character.skin_color}"
-        puts "Eye Color: #{character.eye_color}"
+        puts "#{character.alias}"
+        puts "#{character.personality}"
+        puts "#{character.occupation}"
+        puts "#{character.alignment}"
+        puts "#{character.affiliations}"
+        puts "#{character.goal}"
+        puts "#{character.home}"
+        puts "#{character.family}"
     end
 end

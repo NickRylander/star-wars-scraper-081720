@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
 
-require 'rest-client'
-require 'json'
+require 'open-uri'
+require 'nokogiri'
 require 'pry'
 
 require_relative '../lib/character'
-require_relative '../lib/api'
+require_relative '../lib/scraper'
 require_relative '../lib/cli'
 
 CLI.new.run
